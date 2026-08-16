@@ -1,0 +1,37 @@
+{
+  "plugins": {
+    "mason-lspconfig.nvim": {
+      "rev": "67029ccdac1ef8941e13b826417bc0ffac24cc86",
+      "src": "git@github.com:mason-org/mason-lspconfig.nvim.git"
+    },
+    "mason-tool-installer.nvim": {
+      "rev": "443f1ef8b5e6bf47045cb2217b6f748a223cf7dc",
+      "src": "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
+    },
+    "mason.nvim": {
+      "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "neo-tree.nvim": {
+      "rev": "83e7a2982fd12b9c3d35bc39dd5877cd91a02a61",
+      "src": "git@github.com:nvim-neo-tree/neo-tree.nvim.git",
+      "version": "3.0.0 - 4.0.0"
+    },
+    "nui.nvim": {
+      "rev": "a25dd472316d806eb38a5dd667c2e40da5570c75",
+      "src": "git@github.com:MunifTanjim/nui.nvim.git"
+    },
+    "nvim-lspconfig": {
+      "rev": "51dbf5359da86721662c87ca10eb73add973737b",
+      "src": "git@github.com:neovim/nvim-lspconfig.git"
+    },
+    "nvim-web-devicons": {
+      "rev": "2ae6958df7ced50baac5035cec0c15799eedfbf7",
+      "src": "git@github.com:nvim-tree/nvim-web-devicons.git"
+    },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "git@github.com:nvim-lua/plenary.nvim.git"
+    }
+  }
+}
