@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "lualine.nvim": {
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+      "src": "git@github.com:nvim-lualine/lualine.nvim.git"
+    },
     "mason-lspconfig.nvim": {
       "rev": "67029ccdac1ef8941e13b826417bc0ffac24cc86",
       "src": "git@github.com:mason-org/mason-lspconfig.nvim.git"

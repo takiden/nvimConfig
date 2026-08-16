@@ -12,6 +12,9 @@ vim.pack.add{
 	{ src = "git@github.com:MunifTanjim/nui.nvim.git"},
   -- optional, but recommended
 	{ src = "git@github.com:nvim-tree/nvim-web-devicons.git"},
+	-- lualine
+	{src = "git@github.com:nvim-tree/nvim-web-devicons.git"},
+  {src = "git@github.com:nvim-lualine/lualine.nvim.git"}
 }
 
 require("mason").setup({
@@ -34,3 +37,6 @@ require('neo-tree').setup({
 	    vim.keymap.set('n', '<leader>e', ":Neotree toggle <CR>", { desc = 'toggle Neotree' }),
 	    vim.keymap.set('n', '<leader>ef', ":Neotree focus <CR>", { desc = 'focus Neotree' })
 })
+
+-- Lualine
+require("lualine").setup()
