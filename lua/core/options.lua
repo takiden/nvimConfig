@@ -9,3 +9,4 @@ vim.o.undofile = true
 vim.o.autoread = true
 vim.o.laststatus = 3
 vim.o.cmdheight = 0
+vim.diagnostic.config({virtual_text=true})
