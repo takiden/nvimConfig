@@ -14,7 +14,9 @@ vim.pack.add{
 	{ src = "git@github.com:nvim-tree/nvim-web-devicons.git"},
 	-- lualine
 	{src = "git@github.com:nvim-tree/nvim-web-devicons.git"},
-  {src = "git@github.com:nvim-lualine/lualine.nvim.git"}
+  {src = "git@github.com:nvim-lualine/lualine.nvim.git"},
+	-- treesitter
+	{ src = "git@github.com:nvim-treesitter/nvim-treesitter.git"}
 }
 
 require("mason").setup({
@@ -29,7 +31,7 @@ require("mason").setup({
 
 require("mason-lspconfig").setup()
 require("mason-tool-installer").setup({
-  ensure_installed = { "lua_ls", "tsgo", "gopls" },
+  ensure_installed = { "lua_ls", "tsc", "gopls" },
 })
 
 -- Neotree
@@ -40,3 +42,10 @@ require('neo-tree').setup({
 
 -- Lualine
 require("lualine").setup()
+
+-- treesitter
+  require("nvim-treesitter.config").setup({
+ 				build=":TSUpdate",
+ 				 install_dir = vim.fn.stdpath('data') .. '/site'
+ })
+ require("nvim-treesitter").install({"javascript", "typescript", "go", "gomod"})
