@@ -8,7 +8,11 @@ require("core.colorscheme")
 local plugins_path = vim.fn.stdpath("config") .. "/lua/plugins"
 for _, file in ipairs(vim.fn.readdir(plugins_path)) do
   if file:match("%.lua$") and file ~= "init.lua" then
-    require("plugins." .. file:gsub("%.lua$", ""))
+    local module = "plugins." .. file:gsub("%.lua$", "")
+    local ok, err = pcall(require, module)
+    if not ok then
+      vim.notify("Error loading " .. module .. ": " .. err, vim.log.levels.WARN)
+    end
   end
 end
 
