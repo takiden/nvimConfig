@@ -1,8 +1,5 @@
 require("core.options")
 require("core.globalkeymaps")
-require("core.autocommands")
-require("core.formatting")
-require("core.colorscheme")
 
 -- load plugins
 local plugins_path = vim.fn.stdpath("config") .. "/lua/plugins"
@@ -15,4 +12,10 @@ for _, file in ipairs(vim.fn.readdir(plugins_path)) do
     end
   end
 end
+
+
+require("core.autocommands")
+require("core.formatting")
+require("core.colorscheme")
+
 
