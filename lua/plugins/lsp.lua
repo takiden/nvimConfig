@@ -16,11 +16,11 @@ require("mason").setup({
 })
 
 require("mason-lspconfig").setup({
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, {}),
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}),
-  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
 })
 require("mason-tool-installer").setup({
-  ensure_installed = { "lua_ls", "tsc", "gopls" },
+  ensure_installed = { "lua_ls", "tsc","ts_ls", "gopls" },
 })
 
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
