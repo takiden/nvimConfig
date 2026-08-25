@@ -12,6 +12,11 @@ vim.pack.add({
 
 -- Neotree
 require('neo-tree').setup({
-	    vim.keymap.set('n', '<leader>e', ":Neotree toggle <CR>", { desc = 'toggle Neotree' }),
-	    vim.keymap.set('n', '<leader>ef', ":Neotree focus <CR>", { desc = 'focus Neotree' })
+  filesystem = {
+    filtered_items = {
+      visible = true
+    }
+  },
+  vim.keymap.set('n', '<leader>e', ":Neotree toggle <CR>", { desc = 'toggle Neotree' }),
+  vim.keymap.set('n', '<leader>ef', ":Neotree focus <CR>", { desc = 'focus Neotree' })
 })
