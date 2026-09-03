@@ -1,4 +1,5 @@
 vim.keymap.set("i",'jk', '<Esc>', { noremap = true, silent = true })
+
 -- Copy file path / selection reference for pasting into AI chats
 local function copy_ref(opts)
 	-- "%" is the current buffer's file name; ":." makes it relative to the cwd
